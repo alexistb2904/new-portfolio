@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -49,8 +49,8 @@
               <div id="epreuveE4-dropdown">
                 <ul>
                   <li><a href="epreuveE4.html#synthese">Tableau de synthèse</a></li>
-                  <li><a href="epreuveE4.html#formation">Activité au centre de formation</a></li>
-                  <li><a href="epreuveE4.html#entreprise">Activité en Entreprise</a></li>
+                  <li><a href="epreuveE4.html#formation">Mission réalisé en formation</a></li>
+                  <li><a href="epreuveE4.html#entreprise">Mission réalisé en Entreprise</a></li>
                 </ul>
               </div>
             </li>
@@ -78,17 +78,17 @@
         <span id="mobile-bar">
           <ul id="nav-bar">
             <li><a href="#presentation">Présentation</a></li>
-            <li id="epreuveE4">
+            <li id="epreuveE4" class="epreuveAnimation">
               <a>Epreuve E4</a>
               <div id="mobile-E4">
                 <ul>
                   <li><a href="epreuveE4.html#synthese">Tableau de synthèse</a></li>
-                  <li><a href="epreuveE4.html#formation">Activité au centre de formation</a></li>
-                  <li><a href="epreuveE4.html#entreprise">Activité en Entreprise</a></li>
+                  <li><a href="epreuveE4.html#formation">Mission réalisé en formation</a></li>
+                  <li><a href="epreuveE4.html#entreprise">Mission réalisé en Entreprise</a></li>
                 </ul>
               </div>
             </li>
-            <li id="epreuveE5">
+            <li id="epreuveE5" class="epreuveAnimation">
               <a>Epreuve E5</a>
               <div id="mobile-E5">
                 <ul>
@@ -97,7 +97,7 @@
                 </ul>
               </div>
             </li>
-            <li id="veille">
+            <li id="veille" class="epreuveAnimation">
               <a>Veille Technologique</a>
               <div id="mobile-veille">
                 <ul>
@@ -206,25 +206,12 @@
             <i class="ai-circle-triangle-down-fill"></i>
           </div>
         </div>
-        <div class="presentation-card">
-          <h3>Centre de formation</h3>
-          <p>Campus Montsouris</p>
-          <hr />
-          <p><span>Quelle formation ?</span></p>
-          <p>Je suis actuellement un BTS SIO option SLAM au sein du Campus Montsouris.</p>
-          <p><span>Où ?</span></p>
-          <p>2 Rue Lacaze, 75014 Paris</p>
-          <div class="campusmontsouris_logo">
-            <a href="https://www.campusmontsouris.fr/" target="_blank" rel="noopener"
-              ><img src="assets/img/logo_campusmontsouris.png" alt="Logo du Campus Montsouris"
-            /></a>
-          </div>
-        </div>
       </div>
     </section>
     <hr />
     <section class="competences-button">
-      <button onclick="showCompetences()" aria-label="Affiche mes compétences">Mes Compétences</button>
+      <button onclick="showCompetences()" type="button" aria-label="Affiche mes compétences">Mes Compétences</button>
+      <button onclick="CVLink()" aria-label="Redirige vers mon CV" type="button"><i class="ai-download"></i>Télécharger mon CV</button>
     </section>
     <hr />
     <section class="rappel-liens">
@@ -341,7 +328,7 @@
         <a href="#contact"><button>Contact</button></a>
       </div>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>
