@@ -31,14 +31,14 @@ ChangeHomeText();
 
 function showMLC() {
   const MLC = document.querySelector("#myluxurycarparis");
-  const Paris = document.querySelector("#mariedeparis");
+  const Paris = document.querySelector("#villedeparis");
   MLC.style.display = "block";
   Paris.style.display = "none";
 }
 
 function showParis() {
   const MLC = document.querySelector("#myluxurycarparis");
-  const Paris = document.querySelector("#mariedeparis");
+  const Paris = document.querySelector("#villedeparis");
   Paris.style.display = "block";
   MLC.style.display = "none";
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -35,13 +35,14 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="assets/img/logo_white.png" rel="icon" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="light">
     <header>
       <nav class="mobile-active">
         <span id="computer-bar">
-          <img src="assets/img/logo_white.png" alt="Logo" />
+          <a href="#"><img src="assets/img/logo_white.png" alt="Logo" /></a>
           <ul id="nav-bar">
             <li><a href="#presentation">Présentation</a></li>
             <li id="epreuveE4">
@@ -73,7 +74,7 @@
               </div>
             </li>
           </ul>
-          <div></div>
+          <i class="ai-toggle-off-fill" id="theme-button"></i>
         </span>
         <span id="mobile-bar">
           <ul id="nav-bar">
@@ -107,7 +108,7 @@
               </div>
             </li>
           </ul>
-          <div></div>
+          <i class="ai-toggle-off-fill" id="theme-button-mobile"></i>
           <a><img src="assets/img/logo_white.png" alt="Logo" /></a>
         </span>
       </nav>
@@ -139,7 +140,7 @@
         actuellement en BTS SIO SLAM 1ère année au Campus Montsouris à Paris.
       </p>
       <div class="presentation-content">
-        <div class="presentation-card">
+        <div class="presentation-card" data-aos="fade-up-right">
           <h3>Mon parcours professionnel</h3>
           <hr />
           <div class="presentation-card-content">
@@ -177,21 +178,27 @@
             </div>
           </div>
         </div>
-        <div class="presentation-card" id="mariedeparis">
+        <div class="presentation-card" id="villedeparis" data-aos="fade-up-left">
           <h3>Entreprise</h3>
-          <p>Marie De Paris | Académie du Climat</p>
+          <div class="image-entreprise">
+            <img src="https://wintics.com/wp-content/uploads/2023/02/BLANC-Ville_de_Paris_logo_2019-1024x900.png" alt="Logo Ville de Paris" />
+          </div>
+          <p>Ville De Paris | Académie du Climat</p>
           <hr />
           <p><span>Quelles missions ?</span></p>
-          <p>Mise à jour du logiciel de gestions des salles et créations de nouvelles fonctionnalitées avec Google AppScript</p>
+          <p>Mise à jour du logiciel de gestions des salles et créations d'une nouvelle interface avec Google AppScript</p>
           <p><span>Où ?</span></p>
           <p>2 Pl. Baudoyer, 75004 Paris</p>
-          <div class="presentation-know-more"><a href="">En Savoir Plus</a></div>
+          <div class="presentation-know-more"><a href="entreprise/villedeparis/">En Savoir Plus</a></div>
           <div class="changeIconEntreprise" onclick="showMLC()">
             <i class="ai-circle-triangle-down-fill"></i>
           </div>
         </div>
-        <div class="presentation-card" id="myluxurycarparis" style="display: none">
+        <div class="presentation-card" id="myluxurycarparis" style="display: none" data-aos="fade-up-left">
           <h3>Entreprise</h3>
+          <div class="image-entreprise">
+            <img src="https://myluxurycarparis.fr/assets/img/mlc92_logo.webp" alt="Logo MyLuxuryCar Paris" />
+          </div>
           <p>MyLuxuryCar Paris</p>
           <hr />
           <p><span>Quelles missions ?</span></p>
@@ -201,7 +208,7 @@
           </p>
           <p><span>Où ?</span></p>
           <p>69 Rue Pierre Brossolette, 92320 Chatîllon</p>
-          <div class="presentation-know-more"><a href="">En Savoir Plus</a></div>
+          <div class="presentation-know-more"><a href="entreprise/myluxurycarparis/">En Savoir Plus</a></div>
           <div class="changeIconEntreprise" onclick="showParis()">
             <i class="ai-circle-triangle-down-fill"></i>
           </div>
@@ -210,17 +217,19 @@
     </section>
     <hr />
     <section class="competences-button">
-      <button onclick="showCompetences()" type="button" aria-label="Affiche mes compétences">Mes Compétences</button>
-      <button onclick="CVLink()" aria-label="Redirige vers mon CV" type="button"><i class="ai-download"></i>Télécharger mon CV</button>
+      <button onclick="showCompetences()" type="button" aria-label="Affiche mes compétences" data-aos="fade-up">Mes Compétences</button>
+      <button onclick="CVLink()" aria-label="Redirige vers mon CV" type="button" data-aos="fade-up">
+        <i class="ai-download"></i>Télécharger mon CV
+      </button>
     </section>
     <hr />
-    <section class="rappel-liens">
+    <section class="rappel-liens" data-aos="fade-right">
       <a href="veille.html"> Veille </a>
       <a href="epreuveE5.html"> Epreuve E5 </a>
       <a href="epreuveE4.html"> Epreuve E4 </a>
     </section>
     <hr />
-    <section id="recent-project">
+    <section id="recent-project" data-aos="zoom-in">
       <h2>Mes projets récents</h2>
 
       <div class="recent-projet-flex">
@@ -228,7 +237,7 @@
           <div>
             <p>MyLuxuryCar Paris</p>
             <p>Site fait lors de mon alternance de A à Z par moi, en PHP, JS, HTML/CSS et MySQL</p>
-            <a rel="noopener" href="https://myluxurycarparis.fr" target="_blank">Lien vers Projet</a>
+            <a rel="noopener" href="entreprise/myluxurycarparis/">Lien vers Projet</a>
           </div>
           <div></div>
         </div>
@@ -330,5 +339,10 @@
     </footer>
     <script src="assets/js/home.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/style.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
