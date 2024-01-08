@@ -10,7 +10,7 @@ function ChangeHomeText() {
       i++;
       setTimeout(ChangeText, 150);
     } else {
-      setTimeout(TextReverse, 1500);
+      setTimeout(TextReverse, 150);
     }
   }
   function TextReverse() {
@@ -21,7 +21,7 @@ function ChangeHomeText() {
     } else {
       i = 0;
       currentTextIndex = (currentTextIndex + 1) % texts.length;
-      setTimeout(ChangeText, 1500);
+      setTimeout(ChangeText, 150);
     }
   }
   ChangeText();
