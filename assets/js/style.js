@@ -1,6 +1,6 @@
 const darkModeToggle = document.querySelector("#theme-button");
 const darkModeToggleMobile = document.querySelector("#theme-button-mobile");
-
+const Paris = document.querySelector("#villedeparis img");
 function activateDarkMode() {
   darkModeToggle.classList.remove("ai-toggle-off-fill");
   darkModeToggleMobile.classList.remove("ai-toggle-off-fill");
@@ -10,8 +10,9 @@ function activateDarkMode() {
   darkModeToggleMobile.classList.add("checked");
   document.body.classList.remove("light");
   document.body.classList.add("dark");
-  const Paris = document.querySelector("#villedeparis img");
-  Paris.style.filter = "";
+  if (Paris) {
+    Paris.style.filter = "";
+  }
 }
 
 function activateLightMode() {
@@ -23,8 +24,9 @@ function activateLightMode() {
   darkModeToggleMobile.classList.add("ai-toggle-off-fill");
   document.body.classList.remove("dark");
   document.body.classList.add("light");
-  const Paris = document.querySelector("#villedeparis img");
-  Paris.style.filter = "brightness(0)";
+  if (Paris) {
+    Paris.style.filter = "brightness(0)";
+  }
 }
 
 function setCookie(cname, cvalue, exdays) {

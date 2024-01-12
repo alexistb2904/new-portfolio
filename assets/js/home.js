@@ -124,8 +124,12 @@ function showCompetences() {
   const competencesSkillbarProgress = document.createElement("div");
   competencesSkillbarProgress.className = "competences-skillbar-progress";
   competencesSkillbarProgress.style.backgroundColor = "#c95934";
-  competencesSkillbarProgress.style.width = "99%";
-  competencesSkillbarProgress.innerHTML = "99%";
+  competencesSkillbarProgress.animate([{ width: "0%" }, { width: "99%" }], {
+    duration: 2000,
+  }).onfinish = function () {
+    competencesSkillbarProgress.innerHTML = "99%";
+    competencesSkillbarProgress.style.width = "99%";
+  };
 
   const competencesSkillbarTitle2 = document.createElement("p");
   competencesSkillbarTitle2.className = "competences-skillbar-title";
@@ -134,8 +138,13 @@ function showCompetences() {
   competencesSkillbar2.className = "competences-skillbar";
   const competencesSkillbarProgress2 = document.createElement("div");
   competencesSkillbarProgress2.className = "competences-skillbar-progress";
-  competencesSkillbarProgress2.style.width = "95%";
-  competencesSkillbarProgress2.innerHTML = "95%";
+  competencesSkillbarProgress2.animate([{ width: "0%" }, { width: "95%" }], {
+    duration: 2000,
+    delay: 100,
+  }).onfinish = function () {
+    competencesSkillbarProgress2.innerHTML = "95%";
+    competencesSkillbarProgress2.style.width = "95%";
+  };
   competencesSkillbarProgress2.style.backgroundColor = "#484cdf";
 
   const competencesSkillbarTitle3 = document.createElement("p");
@@ -145,8 +154,13 @@ function showCompetences() {
   competencesSkillbar3.className = "competences-skillbar";
   const competencesSkillbarProgress3 = document.createElement("div");
   competencesSkillbarProgress3.className = "competences-skillbar-progress";
-  competencesSkillbarProgress3.style.width = "85%";
-  competencesSkillbarProgress3.innerHTML = "85%";
+  competencesSkillbarProgress3.animate([{ width: "0%" }, { width: "85%" }], {
+    duration: 2000,
+    delay: 200,
+  }).onfinish = function () {
+    competencesSkillbarProgress3.innerHTML = "85%";
+    competencesSkillbarProgress3.style.width = "85%";
+  };
   competencesSkillbarProgress3.style.backgroundColor = "#e5de66";
 
   const competencesSkillbarTitle4 = document.createElement("p");
@@ -156,8 +170,13 @@ function showCompetences() {
   competencesSkillbar4.className = "competences-skillbar";
   const competencesSkillbarProgress4 = document.createElement("div");
   competencesSkillbarProgress4.className = "competences-skillbar-progress";
-  competencesSkillbarProgress4.style.width = "95%";
-  competencesSkillbarProgress4.innerHTML = "95%";
+  competencesSkillbarProgress4.animate([{ width: "0%" }, { width: "95%" }], {
+    duration: 2000,
+    delay: 300,
+  }).onfinish = function () {
+    competencesSkillbarProgress4.innerHTML = "95%";
+    competencesSkillbarProgress4.style.width = "95%";
+  };
   competencesSkillbarProgress4.style.backgroundColor = "#7d79b0";
 
   const competencesSkillbarTitle5 = document.createElement("p");
@@ -167,8 +186,14 @@ function showCompetences() {
   competencesSkillbar5.className = "competences-skillbar";
   const competencesSkillbarProgress5 = document.createElement("div");
   competencesSkillbarProgress5.className = "competences-skillbar-progress";
-  competencesSkillbarProgress5.style.width = "75%";
-  competencesSkillbarProgress5.innerHTML = "75%";
+  competencesSkillbarProgress5.innerHTML = "";
+  competencesSkillbarProgress5.animate([{ width: "0%" }, { width: "75%" }], {
+    duration: 2000,
+    delay: 400,
+  }).onfinish = function () {
+    competencesSkillbarProgress5.innerHTML = "75%";
+    competencesSkillbarProgress5.style.width = "75%";
+  };
   competencesSkillbarProgress5.style.backgroundColor = "#385f86";
 
   const competencesSkillbarTitle6 = document.createElement("p");
@@ -178,8 +203,13 @@ function showCompetences() {
   competencesSkillbar6.className = "competences-skillbar";
   const competencesSkillbarProgress6 = document.createElement("div");
   competencesSkillbarProgress6.className = "competences-skillbar-progress";
-  competencesSkillbarProgress6.style.width = "75%";
-  competencesSkillbarProgress6.innerHTML = "75%";
+  competencesSkillbarProgress6.animate([{ width: "0%" }, { width: "75%" }], {
+    duration: 2000,
+    delay: 500,
+  }).onfinish = function () {
+    competencesSkillbarProgress6.innerHTML = "75%";
+    competencesSkillbarProgress6.style.width = "75%";
+  };
   competencesSkillbarProgress6.style.backgroundColor = "#f4e278";
 
   const competencesCVButtonContainer = document.createElement("div");
