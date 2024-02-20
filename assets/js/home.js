@@ -270,39 +270,33 @@ function CVLink() {
   window.open("../assets/CV_BTS.pdf");
 }
 
-function SendEmail($email, $subject, $message) {
-  const sendEmailConst = async () => {
-    const apiKey = "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";
-    const data = {
-      personalizations: [
-        {
-          to: [{ email: $email }],
-          subject: $subject,
-        },
-      ],
-      from: { email: "alexistb2904@gmail.com" },
-      content: [{ type: "text/plain", value: $message }],
-    };
+emailjs.init({
+  publicKey: "4t9wiBbEgX16kMNeq",
+});
 
-    try {
-      const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        console.log("Email sent successfully");
-      } else {
-        console.log("Error:", response.statusText);
+function SendEmail(email, nom, message) {
+  emailjs
+    .send("service_kds3j56", "template_zl1gloy", {
+      from_name: nom,
+      from_email: email,
+      message: message,
+    })
+    .then(
+      () => {
+        alert("Message envoyé !");
+      },
+      (error) => {
+        alert("Erreur lors de l'envoi du message : " + error);
       }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
-  sendEmailConst();
+    );
 }
+
+const form = document.querySelector("#contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const email = form.querySelector('input[name="email"]').value;
+  const nom = form.querySelector('input[name="nom"]').value + " " + form.querySelector('input[name="prenom"]').value;
+  const message = form.querySelector('textarea[name="message"]').value;
+  SendEmail(email, nom, message);
+});

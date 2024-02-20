@@ -1034,6 +1034,7 @@ h2 {
   &:focus,
   &:active,
   &:focus-visible {
+    cursor: pointer;
     box-shadow: 0 0 1rem var(--color-shadow);
     background-color: var(--color-primary);
   }
