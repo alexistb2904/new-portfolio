@@ -21,6 +21,8 @@ function handleKey(event) {
     <div id="demineur-container">
 			<div id="demineur-header">
 				<h1>Démineur</h1>
+        <p>Rouge = 1 case d'une mine</p>
+        <p>Orange = 2 case d'une mine</p>
 				<div id="demineur-score">
 					<div id="demineur-movement">Mouvement: <span>0</span></div>
                     <div id="demineur-best">Meilleur score: <span>${getCookie("demineur")}</span></div>
