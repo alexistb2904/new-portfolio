@@ -51,12 +51,7 @@ body {
   padding: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
 section,
@@ -218,24 +213,14 @@ nav img {
 #veille-dropdown a {
   white-space: nowrap;
   transition: 0.5s;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 1;
 }
 
 #epreuveE4-dropdown a:hover,
 #epreuveE5-dropdown a:hover,
 #veille-dropdown a:hover {
   transition: 0.5s;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" -10,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -10, "CRSV" 1;
 }
 
 #epreuveE4-dropdown a:after,
@@ -283,12 +268,7 @@ nav img {
   font-size: calc(1rem + 1.5vw);
   width: 50%;
   transition: 0.5s;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 1;
 }
 
 @keyframes blinkTextCursor {
@@ -309,23 +289,13 @@ nav img {
 
 .home-page-text h1,
 .home-page-text p {
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 1;
   transition: 0.5s;
 }
 
 .home-page-text h1:hover,
 .home-page-text p:hover {
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 1;
 }
 
 .home-page-text h1,
@@ -345,24 +315,14 @@ nav img {
   font-weight: 600;
   text-decoration: none;
   z-index: 0;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 1;
 }
 
 .home-page-grid a:hover {
   transform: scale(1.025);
   z-index: 1;
   box-shadow: 0 0 2rem var(--color-shadow);
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 1;
 }
 
 .home-page-grid a:nth-child(1) {
@@ -419,12 +379,7 @@ h2 {
   font-size: 4vmax;
   margin-top: 0;
   margin-bottom: 0;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 #presentation h2 + p {
@@ -527,12 +482,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-family: "RecursiveVF", monospace;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
 .button-action-red a {
@@ -550,21 +500,11 @@ h2 {
   z-index: 1;
   box-shadow: 0 0 0.5rem var(--color-shadow);
   width: 100%;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 .presentation-card-content a:hover {
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 500,
-    "slnt" -10,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -10, "CRSV" 0;
 }
 
 .presentation-card-content div:nth-child(1) {
@@ -608,12 +548,7 @@ h2 {
 }
 
 .presentation-card h3 {
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
   font-size: 1.5vmax;
 }
 
@@ -656,12 +591,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-family: "RecursiveVF", monospace;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
 .competences-button button:hover {
@@ -670,12 +600,7 @@ h2 {
   z-index: 1;
   box-shadow: 0 0 1rem var(--color-shadow);
   width: 80%;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 .competences-modal {
@@ -804,12 +729,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-family: "RecursiveVF", monospace;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
 .competences-cv-button-container button:hover {
@@ -818,12 +738,7 @@ h2 {
   z-index: 1;
   box-shadow: 0 0 1rem var(--color-shadow);
   width: 80%;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 /* Fin bout Compétences */
@@ -849,12 +764,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
 .rappel-liens a:hover {
@@ -862,12 +772,7 @@ h2 {
   z-index: 1;
   box-shadow: 0 0 1rem var(--color-shadow);
   width: 45%;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 .rappel-liens a:nth-child(1) {
@@ -966,20 +871,13 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  transition:
-    display 0s,
-    opacity 0.5s;
+  transition: display 0s, opacity 0.5s;
   font-size: 1rem;
 }
 
 .recent-projet-card div:nth-child(1) p:first-child {
   font-size: 1.5rem;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 1;
 }
 
 .recent-projet-card div:nth-child(1) p {
@@ -1068,12 +966,7 @@ h2 {
   flex-direction: column;
   font-size: 1.5vmax;
   transition: 0.5s;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 400,
-    "slnt" 0,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 1;
 }
 
 .contact form label textarea {
@@ -1092,12 +985,7 @@ h2 {
 }
 
 .contact form label:focus-within {
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 0,
-    "wght" 600,
-    "slnt" -2,
-    "CRSV" 1;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -2, "CRSV" 1;
 }
 
 .contact form label input:focus,
@@ -1193,7 +1081,7 @@ h2 {
 
 .entreprise-separator div:last-of-type img {
   border-radius: 2vmax;
-  width: 80%;
+  width: 70%;
   object-fit: cover;
 }
 
@@ -1215,11 +1103,14 @@ h2 {
   text-align: center;
 }
 
-.missions-container div:first-of-type {
+.missions-container .split-1 {
   width: 70%;
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.missions-container div:last-of-type {
+.missions-container .split-2 {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -1227,18 +1118,18 @@ h2 {
   gap: 2vh;
 }
 
-.missions-container div:last-of-type img {
+.missions-container .split-2 img {
   width: 2.5rem;
   cursor: pointer;
 }
 
-.missions-container div:last-of-type i {
+.missions-container .split-2 i {
   font-size: 2.5rem;
   color: var(--color-primary);
   transition: 0.25s;
 }
 
-.missions-container div:last-of-type i:hover {
+.missions-container .split-2 i:hover {
   cursor: pointer;
   color: var(--color-secondary);
 }
@@ -1305,12 +1196,7 @@ h2 {
   font-size: 4vmax;
   margin-top: 0;
   margin-bottom: 0;
-  font-variation-settings:
-    "MONO" 0,
-    "CASL" 1,
-    "wght" 600,
-    "slnt" 0,
-    "CRSV" 0;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
 .e4-page .page-head div {
@@ -1358,7 +1244,8 @@ h2 {
 }
 
 #formation .mission-card,
-#entreprise .mission-card {
+#entreprise .mission-card,
+.missions-container .mission-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1373,7 +1260,8 @@ h2 {
 }
 
 #formation .mission-card a,
-#entreprise .mission-card a {
+#entreprise .mission-card a,
+.missions-container .mission-card a {
   text-align: center;
   text-decoration: none;
   color: var(--color-text);
@@ -1386,7 +1274,8 @@ h2 {
 }
 
 #formation .mission-card a:hover,
-#entreprise .mission-card a:hover {
+#entreprise .mission-card a:hover,
+.missions-container .mission-card a:hover {
   background: var(--color-backgroud-footer);
   color: var(--color-text-2);
   border: var(--color-backgroud-footer) solid 0.1rem;
