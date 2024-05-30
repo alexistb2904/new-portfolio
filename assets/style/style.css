@@ -6,6 +6,9 @@ body.light {
   --color-secondary: #f3c262;
   --color-tertiary: #efcbb3;
   --color-quaternary: #fad4a6;
+  --color-rss-rgba: rgba(255, 213, 213, 0.5);
+  --color-grey-rss: rgb(79, 79, 79);
+  --color-blockquote: #f1f5f9;
   --color-text: #121212;
   --color-text-2: white;
   --color-blink: #1212129d;
@@ -27,6 +30,9 @@ body.dark {
   --color-quaternary: #8f7159;
   --color-text: #ffffff;
   --color-text-2: white;
+  --color-rss-rgba: rgba(255, 255, 255, 0.5);
+  --color-grey-rss: rgb(79, 79, 79);
+  --color-blockquote: #303030;
   --color-blink: #ffffff9d;
   --color-background: #1f1f1f;
   --color-nav-background: #5c5c5c;
@@ -1357,6 +1363,116 @@ footer button:hover {
   flex-direction: column;
 }
 
+/* Flux RSS */
+
+.items-rss {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 40vw));
+  gap: 1vw;
+  justify-content: center;
+}
+
+.item-rss {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw;
+  border: 0.1rem solid var(--color-blink);
+  border-radius: 1vw;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.5s;
+}
+
+.item-rss h3 {
+  text-align: left;
+}
+
+.item-rss:hover {
+  background-color: var(--color-rss-rgba);
+}
+
+.item-rss img {
+  width: 100%;
+}
+
+main#article-rss {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+main#article-rss p {
+  margin: 0.5% 0;
+  padding: 0;
+  text-wrap: pretty;
+}
+
+main#article-rss .image-rss {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main#article-rss .image-rss img {
+  border-radius: 1vw;
+  width: 80%;
+}
+
+main#article-rss img {
+  width: 100%;
+}
+
+main#article-rss .codeblock {
+  width: 50%;
+  background-color: var(--color-blockquote);
+  color: var(--color-text-2);
+  margin: auto;
+  text-align: center;
+  padding: 1%;
+  border-radius: 1vw;
+}
+
+main#article-rss .codeblock pre {
+  background-color: var(--color-grey-rss);
+  padding: 2%;
+  border-radius: 0.5vw;
+}
+
+main#article-rss code {
+  background-color: var(--color-grey-rss);
+}
+
+main#article-rss blockquote {
+  position: relative;
+  font-style: italic;
+  padding: 1% 3% 1% 2%;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 0.9rem;
+  border-radius: 1vw;
+  margin: 1% 0;
+  text-align: left;
+  background-color: var(--color-blockquote);
+}
+
+main#article-rss blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: var(--color-secondary);
+  border-radius: 1vw 0 0 1vw;
+}
+
+main#article-rss blockquote a {
+  color: var(--color-text);
+}
 /* ----------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------*/
 /* Small devices such as large phones (640px and below) */
