@@ -31,7 +31,7 @@ const fluxRSS = fetch("https://corsproxy.io/?" + encodeURIComponent("https://cod
       document.querySelector("main").innerHTML = html;
     } else if (document.querySelector("main").id == "article-rss") {
       const urlParams = new URLSearchParams(window.location.search);
-      const articleToShow = parseInt(urlParams.get("article"));
+      const articleToShow = urlParams.get("article");
       console.log(articleToShow);
       if (articleToShow != "") {
         const items = data.querySelectorAll("item");
