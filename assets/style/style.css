@@ -1436,13 +1436,14 @@ main#article-rss .codeblock {
   border-radius: 1vw;
 }
 
-main#article-rss .codeblock pre {
+main#article-rss pre {
   background-color: var(--color-grey-rss);
   padding: 2%;
   border-radius: 0.5vw;
 }
 
 main#article-rss code {
+  color: white;
   background-color: var(--color-grey-rss);
 }
 

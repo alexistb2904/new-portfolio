@@ -18,7 +18,7 @@ const fluxRSS = fetch("https://corsproxy.io/?" + encodeURIComponent("https://cod
         item.content = el.getElementsByTagName("content:encoded")[0].textContent;
         item.imageUrl = el.getElementsByTagName("media:content")[0].getAttribute("url");
         html += `
-                <a class="item-rss" href="./flux/articles/?article=${articleIndex}" target="_blank">
+                <a class="item-rss" href="./articles/?article=${articleIndex}" target="_blank">
                     <img src="${item.imageUrl}" alt="${item.title}">
                     <h3>${item.title}</h3>
                     <p>${item.description}</p>
@@ -63,7 +63,7 @@ const fluxRSS = fetch("https://corsproxy.io/?" + encodeURIComponent("https://cod
                     
                     <br>
                     ${item.content
-                      .replace(/<p>!!! well<\/p>/g, "<div class='codeblock'>")
+                      .replace(/<p>!!! well<\/p>/g, "<code class='codeblock'>")
                       .replace(/<p>!!!<\/p>/g, "</div>")
                       .replace(/!!! well/g, "<div class='codeblock'>")
                       .replace(/::: playground/g, "<div class='playground'>")
@@ -74,6 +74,7 @@ const fluxRSS = fetch("https://corsproxy.io/?" + encodeURIComponent("https://cod
                       .replace(/!!!/g, "</div>")}
                     <div>Créateur : ${item.creator} <br> Lien Originel : ${item.link}</div>
                 `;
+            console.log(item.content);
           }
           articleIndex++;
         });
