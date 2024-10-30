@@ -619,6 +619,7 @@ h2 {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(1vmax);
+  background: var(--color-shadow);
   z-index: 100;
 }
 
@@ -1351,6 +1352,7 @@ footer button:hover {
 .demineur-square {
   border: 0.1vmax solid var(--color-blink);
   background-color: var(--color-glassmorph);
+  color: var(--color-text);
   border-radius: 0.5vw;
   display: flex;
   justify-content: center;
@@ -1474,9 +1476,42 @@ main#article-rss blockquote::before {
 main#article-rss blockquote a {
   color: var(--color-text);
 }
+
+main#veilleTech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main#veilleTech img {
+  width: 100%;
+}
+
+#veilleTech .title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.veilleDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.veilleDiv div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.veilleFlex ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
 /* ----------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------*/
-/* Small devices such as large phones (640px and below) */
 @media only screen and (max-width: 40em) {
   nav span {
     flex-direction: column;

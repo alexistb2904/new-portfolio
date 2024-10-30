@@ -33,6 +33,7 @@ function handleKey(event) {
 			</div>
 			<div id="demineur-board"></div>
 			<button id="demineur-restart">Recommencer</button>
+      <button id="killGame">Fermer</button>
 		</div>
     `;
       document.body.appendChild(gameModal);
@@ -51,6 +52,7 @@ function handleKey(event) {
       const bestDisplay = document.querySelector("#demineur-best span");
       const sizeInput = document.querySelector("#demineur-size");
       const mineInput = document.querySelector("#demineur-mine");
+      const killGame = document.querySelector("#killGame");
 
       startGame();
       function startGame() {
@@ -161,6 +163,10 @@ function handleKey(event) {
         movementDisplay.innerHTML = 0;
         statusDisplay.style.color = "";
         startGame();
+      });
+
+      killGame.addEventListener("click", () => {
+        gameModal.remove();
       });
     }
   }
