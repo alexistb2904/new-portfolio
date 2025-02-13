@@ -1,9 +1,9 @@
-const nav_mobile_E4 = document.querySelector("#mobile-bar #epreuveE4");
-const nav_mobile_E5 = document.querySelector("#mobile-bar #epreuveE5");
+const nav_mobile_E4 = document.querySelector("#mobile-bar #epreuveE5");
+const nav_mobile_E5 = document.querySelector("#mobile-bar #epreuveE6");
 const nav_mobile_veille = document.querySelector("#mobile-bar #veille");
 
-const mobile_E4 = document.querySelector("#mobile-bar #epreuveE4 #mobile-E4");
-const mobile_E5 = document.querySelector("#mobile-bar #epreuveE5 #mobile-E5");
+const mobile_E4 = document.querySelector("#mobile-bar #epreuveE5 #mobile-E5");
+const mobile_E5 = document.querySelector("#mobile-bar #epreuveE6 #mobile-E6");
 const mobile_veille = document.querySelector("#mobile-bar #veille #mobile-veille");
 
 function AppearMobile(name) {
