@@ -1197,7 +1197,7 @@ h2 {
 
 /* Début Page E4 */
 
-.e4-page .page-head h1 {
+.e5-page .page-head h1 {
   text-align: center;
   text-align: center;
   font-size: 4vmax;
@@ -1206,7 +1206,7 @@ h2 {
   font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0;
 }
 
-.e4-page .page-head div {
+.e5-page .page-head div {
   margin-top: 2%;
   display: flex;
   flex-direction: row;
@@ -1216,7 +1216,7 @@ h2 {
   gap: 5%;
 }
 
-.e4-page .page-head div a {
+.e5-page .page-head div a {
   text-align: center;
   text-decoration: none;
   color: var(--color-text);
@@ -1228,13 +1228,13 @@ h2 {
   border-radius: 1rem;
 }
 
-.e4-page .page-head div a:hover {
+.e5-page .page-head div a:hover {
   background: var(--color-backgroud-footer);
   color: var(--color-text-2);
   border: var(--color-backgroud-footer) solid 0.1rem;
 }
 
-.e4-page #synthese {
+.e5-page #synthese {
   font-size: 3vmax;
   display: flex;
   flex-direction: column;
