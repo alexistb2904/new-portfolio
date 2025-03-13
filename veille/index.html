@@ -114,23 +114,142 @@
     </header>
     <main id="veilleTech">
       <div class="title">
-        <h1>Veille Technologiques</h1>
+        <h1>Sujet : Progressive Web Apps (PWA)</h1>
       </div>
       <div class="veilleDiv">
         <div class="veilleFlex">
-          <h2>Outils Utilisées</h2>
+          <div>
+            <img
+              style="width: 100%"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/PWA_color_logo.svg/langfr-1920px-PWA_color_logo.svg.png"
+              alt="PWA"
+            />
+          </div>
+          <div>
+            <h3>🧠 Définition</h3>
+            <p>
+              Les Progressive Web Apps (PWA) sont des applications web qui utilisent les technologies modernes du web pour offrir une expérience
+              utilisateur proche de celle des applications mobiles natives. Elles peuvent être installées sur un appareil, fonctionner hors ligne et
+              envoyer des notifications push.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <h2>Fonctionnement technique</h2>
+          <p>Pour fonctionner une PWA a besoins de 3 éléments au minimum</p>
           <ul>
-            <li>Feedly</li>
-            <li>Google Alert</li>
-            <li>X (Twitter)</li>
-            <li>Reddit</li>
-            <li>Dev.to</li>
-            <li>Autre divers réseaux</li>
+            <li>
+              Service Workers
+              <ul>
+                <li>
+                  Fichiers JavaScript qui s'exécutent en arrière-plan, permettant :
+                  <ul>
+                    <li>La mise en cache des ressources</li>
+                    <li>Le mode hors-ligne</li>
+                    <li>La gestion des notifications push</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Manifeste Web App (manifest.json)
+              <ul>
+                <li>
+                  Un fichier JSON qui contient :
+                  <ul>
+                    <li>Le nom de l’application</li>
+                    <li>L’icône</li>
+                    <li>L’orientation</li>
+                    <li>Les couleurs</li>
+                    <li>Le comportement au lancement</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              HTTPS obligatoire
+              <ul>
+                <li>
+                  Les PWA doivent être servies via HTTPS pour garantir la sécurité des échanges, notamment pour les fonctionnalités sensibles comme
+                  les notifications.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div>
+          <h2>Quelques exemples connus :</h2>
+          <ul>
+            <li>Twitter Lite</li>
+            <li>Spotify Web</li>
+            <li>Pinterest</li>
+            <li>Google Maps Go</li>
           </ul>
         </div>
         <div>
-          <img src="../assets/img/feedly.png" />
-          <img src="../assets/img/devto.png" />
+          <h2>Comment en créer une ?</h2>
+          <p>Pour créer des PWA diverse ressources et technologies sont utilisables, un grand nombre de technologies les supportent.</p>
+          <ul>
+            <li>React + Vite/CRA avec Workbox</li>
+            <li>Vue.js avec le plugin @vue/pwa</li>
+            <li>Angular avec @angular/pwa</li>
+            <li>SvelteKit avec service workers personnalisés</li>
+          </ul>
+          <p>Ce n'est pas non plus le nombre de tutoriels qui manquent :</p>
+          <a href="https://web.dev/learn/pwa/welcome?hl=fr">Tutoriel officiel de Google</a><br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pbSdAp8EmwI?si=zOia2iXcKI-jIwbt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <hr />
+        <div>
+          <h2>🔔 En apprendre plus</h2>
+          Voici les outils et sources que j’utilise pour rester informé des nouveautés sur les PWA :
+          <ul>
+            <li>
+              📰 Sites spécialisés
+              <ul>
+                <li>web.dev (par Google)</li>
+                <li>developer.mozilla.org (MDN)</li>
+                <li>PWA Stats : retours d’expérience de grandes entreprises</li>
+                <li>Smashing Magazine</li>
+              </ul>
+            </li>
+            <li>
+              🧰 Outils
+              <ul>
+                <li>Google Lighthouse : pour tester une PWA</li>
+                <li>PWA Builder (https://www.pwabuilder.com/) : créer une PWA à partir d’un site</li>
+                <li>Can I use (https://caniuse.com/) : vérifier la compatibilité navigateur</li>
+              </ul>
+            </li>
+            <li>
+              📢 Réseaux sociaux & newsletters
+              <ul>
+                <li>Twitter/X : suivre les comptes de @webdev, @GoogleChromeDev, @Firt (expert PWA)</li>
+                <li>Reddit : r/ProgressiveWebApps</li>
+                <li>Newsletters : WebOps Weekly, Frontend Focus, JavaScript Weekly</li>
+              </ul>
+            </li>
+            <li>
+              🧪 Test perso
+              <ul>
+                <li>
+                  Je réalise moi-même des tests de mini-PWA en HTML CSS JS natif pour mieux comprendre leur fonctionnement (service workers, manifest,
+                  etc.)
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </main>

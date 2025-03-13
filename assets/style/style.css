@@ -1494,20 +1494,28 @@ main#veilleTech img {
 
 .veilleDiv {
   display: flex;
+  flex-direction: column;
+}
+
+.veilleDiv .veilleFlex {
+  gap: 2vw;
+  display: flex;
   flex-direction: row;
 }
 
-.veilleDiv div {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.veilleDiv .veilleFlex div {
+  width: 100%;
 }
 
-.veilleFlex ul {
+.veilleDiv .veilleFlex div:nth-child(1) {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.veilleDiv h2 {
+  text-align: left;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------*/
