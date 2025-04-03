@@ -1244,6 +1244,8 @@ h2 {
 }
 
 #formation .mission-card-container,
+#PPEDESKTOP .mission-card-container,
+#PPEWEB .mission-card-container,
 #entreprise .mission-card-container {
   margin-top: 5%;
   display: flex;
@@ -1251,6 +1253,8 @@ h2 {
 }
 
 #formation .mission-card,
+#PPEDESKTOP .mission-card,
+#PPEWEB .mission-card,
 #entreprise .mission-card,
 .missions-container .mission-card {
   display: flex;
@@ -1268,6 +1272,8 @@ h2 {
 
 #formation .mission-card a,
 #entreprise .mission-card a,
+#PPEDESKTOP .mission-card a,
+#PPEWEB .mission-card a,
 .missions-container .mission-card a {
   text-align: center;
   text-decoration: none;
@@ -1282,6 +1288,8 @@ h2 {
 
 #formation .mission-card a:hover,
 #entreprise .mission-card a:hover,
+#PPEDESKTOP .mission-card a:hover,
+#PPEWEB .mission-card a:hover,
 .missions-container .mission-card a:hover {
   background: var(--color-backgroud-footer);
   color: var(--color-text-2);
@@ -1289,6 +1297,8 @@ h2 {
 }
 
 #formation .mission-card p,
+#PPEDESKTOP .mission-card p,
+#PPEWEB .mission-card p,
 #entreprise .mission-card p {
   margin: 1% 5%;
   text-wrap: pretty;
