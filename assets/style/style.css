@@ -1488,44 +1488,391 @@ main#article-rss blockquote a {
 }
 
 main#veilleTech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
 }
 
-main#veilleTech img {
-  width: 100%;
-}
-
-#veilleTech .title {
+main#veilleTech h1 {
+  font-size: 2.5rem;
   text-align: center;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.veilleDiv {
+main#veilleTech h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+main#veilleTech h3 {
+  font-size: 1.4rem;
+  color: var(--color-primary-hover);
+  margin-top: 1rem;
+}
+
+main#veilleTech p {
+  margin-bottom: 1rem;
+}
+
+main#veilleTech a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+main#veilleTech a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+main#veilleTech ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+main#veilleTech li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+/* Style list items with icons */
+main#veilleTech li > i.fas,
+main#veilleTech li > i.fab {
+  position: absolute;
+  left: 0;
+  top: 0.2em; /* Adjust vertical alignment */
+  width: 1.2em; /* Ensure alignment */
+  text-align: center;
+  margin-right: 0.5em;
+}
+main#veilleTech li .text-primary {
+  color: var(--color-primary);
+}
+main#veilleTech li .text-secondary {
+  color: var(--color-secondary);
+}
+main#veilleTech li .text-grey {
+  color: var(--color-grey-rss);
+}
+
+main#veilleTech strong {
+  color: var(--color-primary-hover);
+  font-weight: 600;
+}
+
+main#veilleTech pre {
+  background-color: var(--color-blockquote);
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1em 0;
+  border: 1px solid var(--color-tertiary);
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* --- Séparateur Veille --- */
+main#veilleTech .separator {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-hr-opacity), var(--color-secondary), var(--color-hr-opacity));
+  margin: 3rem 0;
+}
+
+main#veilleTech .main-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-tertiary);
+}
+main#veilleTech .subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-grey-rss);
+}
+
+main#veilleTech .icon {
+  margin-right: 0.7rem;
+  color: var(--color-secondary);
+  font-size: 0.9em;
+}
+
+/* --- Cartes Veille --- */
+main#veilleTech .card {
+  background-color: var(--color-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-tertiary);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+main#veilleTech .card:hover {
+  transform: translateY(-5%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Section Introduction Veile --- */
+main#veilleTech .introduction .intro-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main#veilleTech .introduction .intro-text {
+  flex: 2;
+}
+main#veilleTech .introduction .intro-image {
+  flex: 1;
+  text-align: center;
+}
+main#veilleTech .introduction img {
+  max-width: 100%;
+  height: auto;
+  max-height: 20%;
+  border-radius: 5px;
+}
+
+/* --- Section Fonctionnalités Clés Veille --- */
+main#veilleTech .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+main#veilleTech .feature-item {
+  text-align: center;
+}
+main#veilleTech .feature-icon {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  display: block;
+}
+main#veilleTech .feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+/* --- Section Technique Veille --- */
+main#veilleTech .technical-requirements .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+main#veilleTech .technical-requirements .tech-item {
+  padding: 1rem;
+  background-color: var(--color-blockquote);
+  border-radius: 5px;
+  border-left: 5px solid var(--color-primary);
+}
+main#veilleTech .tech-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+main#veilleTech .tech-item h3 i {
+  margin-right: 0.5rem;
+  color: var(--color-primary-hover);
+}
+main#veilleTech .tech-item ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+main#veilleTech .tech-item li {
+  padding-left: 0;
+}
+
+/* --- Section Avantages Veille --- */
+main#veilleTech .benefits-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+main#veilleTech .benefit-column {
+  flex: 1;
+  min-width: 280px;
+  background-color: var(--color-blockquote);
+  padding: 1.5rem;
+}
+main#veilleTech .benefit-column h3 {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.3rem;
+}
+main#veilleTech .benefit-column h3 i {
+  margin-right: 0.5rem;
+}
+main#veilleTech .benefit-column ul {
+  margin-top: 1rem;
+}
+
+/* --- Section Défis Veille --- */
+main#veilleTech .challenges ul {
+  list-style: none;
+  padding-left: 0;
+}
+main#veilleTech .challenges li {
+  background-color: var(--color-blockquote);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  border-left: 4px solid var(--color-grey-rss);
+  display: flex;
+  align-items: center;
+}
+main#veilleTech .challenges li i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* --- Section Exemples Veille --- */
+main#veilleTech .examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+main#veilleTech .example-item {
   display: flex;
   flex-direction: column;
-}
-
-.veilleDiv .veilleFlex {
-  gap: 2vw;
-  display: flex;
-  flex-direction: row;
-}
-
-.veilleDiv .veilleFlex div {
-  width: 100%;
-}
-
-.veilleDiv .veilleFlex div:nth-child(1) {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 20%;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-background);
+}
+main#veilleTech .example-item img {
+  max-height: 60px;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+main#veilleTech .example-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  flex-grow: 1;
 }
 
-.veilleDiv h2 {
-  text-align: left;
+/* --- Section Développement Veille --- */
+main#veilleTech .development .dev-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+main#veilleTech .development .dev-column {
+  flex: 1;
+  min-width: 300px;
+}
+main#veilleTech .development .dev-column ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+main#veilleTech .development .dev-column li {
+  padding-left: 0;
+}
+main#veilleTech .development .video-thumbnail-link {
+  display: inline-block;
+  border: 1px solid var(--color-tertiary);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+}
+main#veilleTech .development .video-thumbnail-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px var(--color-shadow);
+}
+main#veilleTech .development .video-thumbnail {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+main#veilleTech .development .video-thumbnail-link span {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--color-text-2);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+main#veilleTech .development .video-thumbnail-link:hover span {
+  opacity: 1;
+  text-decoration: none;
+}
+
+main#veilleTech .future-trends ul {
+  list-style: none;
+  padding-left: 0;
+}
+main#veilleTech .future-trends li {
+  padding-left: 1.8em;
+  position: relative;
+}
+main#veilleTech .future-trends li::before {
+  content: "\f0eb";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: var(--color-secondary);
+  width: 1.2em;
+  text-align: center;
+}
+main#veilleTech .future-trends li i.fas.fa-fish {
+  margin-left: 0.5em;
+}
+main#veilleTech .keep-updated {
+  background-color: var(--color-blockquote);
+}
+main#veilleTech .resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+main#veilleTech .resources-grid h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+main#veilleTech .resources-grid h3 i {
+  margin-right: 0.5rem;
+  color: var(--color-primary);
+}
+main#veilleTech .resources-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+main#veilleTech .resources-grid li {
+  padding-left: 0;
+  margin-bottom: 0.4rem;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------*/

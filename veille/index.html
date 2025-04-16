@@ -31,6 +31,7 @@
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link href="../assets/img/logo_white.png" rel="icon" type="image/x-icon" />
   </head>
 
@@ -113,145 +114,333 @@
       </nav>
     </header>
     <main id="veilleTech">
-      <div class="title">
-        <h1>Sujet : Progressive Web Apps (PWA)</h1>
-      </div>
-      <div class="veilleDiv">
-        <div class="veilleFlex">
-          <div>
-            <img
-              style="width: 100%"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/PWA_color_logo.svg/langfr-1920px-PWA_color_logo.svg.png"
-              alt="PWA"
-            />
-          </div>
-          <div>
-            <h3>🧠 Définition</h3>
+      <header class="main-header">
+        <h1>Veille Technologique : Progressive Web Apps (PWA)</h1>
+        <p class="subtitle">Une exploration complète des applications web de nouvelle génération.</p>
+      </header>
+
+      <section class="introduction card">
+        <div class="intro-flex">
+          <div class="intro-text">
+            <h2><i class="fas fa-brain icon"></i> Qu'est-ce qu'une PWA ?</h2>
             <p>
-              Les Progressive Web Apps (PWA) sont des applications web qui utilisent les technologies modernes du web pour offrir une expérience
-              utilisateur proche de celle des applications mobiles natives. Elles peuvent être installées sur un appareil, fonctionner hors ligne et
-              envoyer des notifications push.
+              Les <strong>Progressive Web Apps (PWA)</strong> sont des applications web conçues pour offrir une expérience utilisateur riche et
+              fiable, similaire à celle des applications natives (mobiles ou de bureau), directement depuis le navigateur. Elles tirent parti des
+              technologies web modernes pour être rapides, engageantes et installables.
+            </p>
+            <p>
+              L'objectif est de combiner le meilleur du web (accessibilité, partage facile via URL) avec le meilleur des applications natives
+              (performances, fonctionnalités hors ligne, notifications).
             </p>
           </div>
+          <div class="intro-image">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/PWA_color_logo.svg/langfr-1920px-PWA_color_logo.svg.png"
+              alt="Logo PWA"
+            />
+          </div>
         </div>
-        <hr />
-        <div>
-          <h2>Fonctionnement technique</h2>
-          <p>Pour fonctionner une PWA a besoins de 3 éléments au minimum</p>
-          <ul>
-            <li>
-              Service Workers
-              <ul>
-                <li>
-                  Fichiers JavaScript qui s'exécutent en arrière-plan, permettant :
-                  <ul>
-                    <li>La mise en cache des ressources</li>
-                    <li>Le mode hors-ligne</li>
-                    <li>La gestion des notifications push</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Manifeste Web App (manifest.json)
-              <ul>
-                <li>
-                  Un fichier JSON qui contient :
-                  <ul>
-                    <li>Le nom de l’application</li>
-                    <li>L’icône</li>
-                    <li>L’orientation</li>
-                    <li>Les couleurs</li>
-                    <li>Le comportement au lancement</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              HTTPS obligatoire
-              <ul>
-                <li>
-                  Les PWA doivent être servies via HTTPS pour garantir la sécurité des échanges, notamment pour les fonctionnalités sensibles comme
-                  les notifications.
-                </li>
-              </ul>
-            </li>
-          </ul>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="core-features">
+        <h2><i class="fas fa-star icon"></i> Fonctionnalités Clés</h2>
+        <div class="features-grid">
+          <article class="feature-item card">
+            <i class="fas fa-download feature-icon"></i>
+            <h3>Installable</h3>
+            <p>
+              Les utilisateurs peuvent ajouter la PWA à leur écran d'accueil, la lançant comme une application native sans passer par le navigateur.
+            </p>
+          </article>
+          <article class="feature-item card">
+            <i class="fas fa-wifi-slash feature-icon"></i>
+            <h3>Fonctionnement Hors Ligne</h3>
+            <p>
+              Grâce aux Service Workers, les PWA peuvent fonctionner même sans connexion internet ou avec une connexion instable, en servant du
+              contenu mis en cache.
+            </p>
+          </article>
+          <article class="feature-item card">
+            <i class="fas fa-bell feature-icon"></i>
+            <h3>Notifications Push</h3>
+            <p>Elles peuvent recevoir et afficher des notifications push (avec l'accord de l'utilisateur), augmentant l'engagement.</p>
+          </article>
+          <article class="feature-item card">
+            <i class="fas fa-mobile-alt feature-icon"></i>
+            <h3>Apparence Native</h3>
+            <p>
+              Elles peuvent s'exécuter en plein écran, sans la barre d'adresse du navigateur, et définir une orientation, une icône et un écran de
+              démarrage.
+            </p>
+          </article>
+          <article class="feature-item card">
+            <i class="fas fa-sync-alt feature-icon"></i>
+            <h3>Mise à jour Transparente</h3>
+            <p>
+              Les PWA se mettent à jour automatiquement en arrière-plan, garantissant que les utilisateurs disposent toujours de la dernière version.
+            </p>
+          </article>
+          <article class="feature-item card">
+            <i class="fas fa-link feature-icon"></i>
+            <h3>Partageable</h3>
+            <p>
+              Chaque écran de l'application est accessible via une URL unique, facilitant le partage et l'indexation par les moteurs de recherche.
+            </p>
+          </article>
         </div>
-        <hr />
-        <div>
-          <h2>Quelques exemples connus :</h2>
-          <ul>
-            <li>Twitter Lite</li>
-            <li>Spotify Web</li>
-            <li>Pinterest</li>
-            <li>Google Maps Go</li>
-          </ul>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="technical-requirements card">
+        <h2><i class="fas fa-cogs icon"></i> Comment ça marche techniquement ?</h2>
+        <p>Pour qu'un site web soit considéré comme une PWA installable, il doit remplir certains critères techniques fondamentaux :</p>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <h3><i class="fas fa-lock"></i> HTTPS Obligatoire</h3>
+            <p>
+              La connexion doit être sécurisée via HTTPS. C'est indispensable pour la sécurité et pour permettre l'utilisation des Service Workers.
+            </p>
+          </div>
+          <div class="tech-item">
+            <h3><i class="fas fa-file-alt"></i> Manifeste Web App (<code>manifest.json</code>)</h3>
+            <p>
+              Un fichier JSON qui décrit l'application : nom, icônes (pour l'écran d'accueil), couleurs du thème, mode d'affichage (plein écran,
+              etc.), URL de démarrage.
+            </p>
+            <pre><code>{
+"short_name": "Ma PWA",
+"name": "Mon Application PWA Exemple",
+"icons": [ ... ],
+"start_url": "/",
+"display": "standalone",
+"theme_color": "#e36255",
+"background_color": "#ffffff"
+}</code></pre>
+          </div>
+          <div class="tech-item">
+            <h3><i class="fas fa-sync"></i> Service Worker</h3>
+            <p>
+              Un script JavaScript exécuté en arrière-plan par le navigateur. Il agit comme un proxy réseau, interceptant les requêtes et permettant :
+            </p>
+            <ul>
+              <li>La mise en cache avancée (gestion du mode hors-ligne)</li>
+              <li>La synchronisation en arrière-plan</li>
+              <li>La réception des notifications push</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2>Comment en créer une ?</h2>
-          <p>Pour créer des PWA diverse ressources et technologies sont utilisables, un grand nombre de technologies les supportent.</p>
-          <ul>
-            <li>React + Vite/CRA avec Workbox</li>
-            <li>Vue.js avec le plugin @vue/pwa</li>
-            <li>Angular avec @angular/pwa</li>
-            <li>SvelteKit avec service workers personnalisés</li>
-          </ul>
-          <p>Ce n'est pas non plus le nombre de tutoriels qui manquent :</p>
-          <a href="https://web.dev/learn/pwa/welcome?hl=fr">Tutoriel officiel de Google</a><br />
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/pbSdAp8EmwI?si=zOia2iXcKI-jIwbt"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="benefits">
+        <h2><i class="fas fa-thumbs-up icon"></i> Avantages des PWA</h2>
+        <div class="benefits-flex">
+          <div class="benefit-column card">
+            <h3><i class="fas fa-user"></i> Pour les Utilisateurs</h3>
+            <ul>
+              <li><i class="fas fa-bolt text-secondary"></i> Rapidité et fluidité</li>
+              <li><i class="fas fa-download text-secondary"></i> Installation facile sans passer par un store</li>
+              <li><i class="fas fa-wifi-slash text-secondary"></i> Accès hors ligne ou sur réseau faible</li>
+              <li><i class="fas fa-bell text-secondary"></i> Notifications pertinentes</li>
+              <li><i class="fas fa-arrows-alt-h text-secondary"></i> Expérience cohérente sur tous les appareils</li>
+              <li><i class="fas fa-database text-secondary"></i> Utilise moins d'espace de stockage qu'une app native</li>
+            </ul>
+          </div>
+          <div class="benefit-column card">
+            <h3><i class="fas fa-building"></i> Pour les Développeurs / Entreprises</h3>
+            <ul>
+              <li><i class="fas fa-code text-primary"></i> Un seul code base pour web et "app"</li>
+              <li><i class="fas fa-dollar-sign text-primary"></i> Coûts de développement et de maintenance réduits</li>
+              <li><i class="fas fa-rocket text-primary"></i> Déploiement et mises à jour simplifiés (pas de validation de store)</li>
+              <li><i class="fas fa-users text-primary"></i> Meilleur taux d'engagement et de conversion</li>
+              <li><i class="fas fa-search text-primary"></i> Amélioration du SEO car découvrable par les moteurs de recherche</li>
+              <li><i class="fas fa-share-alt text-primary"></i> Facilité de partage via URL</li>
+            </ul>
+          </div>
         </div>
-        <hr />
-        <div>
-          <h2>🔔 En apprendre plus</h2>
-          Voici les outils et sources que j’utilise pour rester informé des nouveautés sur les PWA :
-          <ul>
-            <li>
-              📰 Sites spécialisés
-              <ul>
-                <li>web.dev (par Google)</li>
-                <li>developer.mozilla.org (MDN)</li>
-                <li>PWA Stats : retours d’expérience de grandes entreprises</li>
-                <li>Smashing Magazine</li>
-              </ul>
-            </li>
-            <li>
-              🧰 Outils
-              <ul>
-                <li>Google Lighthouse : pour tester une PWA</li>
-                <li>PWA Builder (https://www.pwabuilder.com/) : créer une PWA à partir d’un site</li>
-                <li>Can I use (https://caniuse.com/) : vérifier la compatibilité navigateur</li>
-              </ul>
-            </li>
-            <li>
-              📢 Réseaux sociaux & newsletters
-              <ul>
-                <li>Twitter/X : suivre les comptes de @webdev, @GoogleChromeDev, @Firt (expert PWA)</li>
-                <li>Reddit : r/ProgressiveWebApps</li>
-                <li>Newsletters : WebOps Weekly, Frontend Focus, JavaScript Weekly</li>
-              </ul>
-            </li>
-            <li>
-              🧪 Test perso
-              <ul>
-                <li>
-                  Je réalise moi-même des tests de mini-PWA en HTML CSS JS natif pour mieux comprendre leur fonctionnement (service workers, manifest,
-                  etc.)
-                </li>
-              </ul>
-            </li>
-          </ul>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="challenges card">
+        <h2><i class="fas fa-exclamation-triangle icon"></i> Défis et Limitations</h2>
+        <ul>
+          <li>
+            Support parfois limité de certaines fonctionnalités avancées sur iOS (notifications push web en cours de déploiement, accès à certains
+            capteurs...).
+          </li>
+          <li>Peut consommer plus de batterie qu'une application native optimisée pour certaines tâches en arrière-plan.</li>
+          <li>Accès limité aux fonctionnalités matérielles très spécifiques par rapport aux applications natives.</li>
+          <li>
+            Moins de visibilité dans les App Stores traditionnels (bien que des solutions existent comme les Trusted Web Activities sur Android).
+          </li>
+          <li>Perception utilisateur : certains utilisateurs peuvent encore préférer une "vraie" application téléchargée depuis un store.</li>
+        </ul>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="examples">
+        <h2><i class="fas fa-laptop-code icon"></i> Exemples Notables de PWA</h2>
+        <p>De nombreuses grandes entreprises ont adopté les PWA avec succès :</p>
+        <div class="examples-grid">
+          <div class="example-item card">
+            <img src="../assets/img/xlogo.png" alt="Twitter Logo" />
+            <p><strong>Twitter (X) Lite</strong>: Conçue pour être rapide et utiliser moins de données, essentielle sur les marchés émergents.</p>
+          </div>
+          <div class="example-item card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"
+              alt="Spotify Logo"
+            />
+            <p><strong>Spotify Web</strong>: Permet l'écoute de musique directement depuis le navigateur avec des capacités hors ligne.</p>
+          </div>
+          <div class="example-item card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest Logo" />
+            <p><strong>Pinterest</strong>: A vu une augmentation significative de l'engagement après avoir lancé sa PWA.</p>
+          </div>
+          <div class="example-item card">
+            <img src="../assets/img/googlemapsgo.png" alt="Google Maps Logo" />
+            <p><strong>Google Maps Go</strong>: Version allégée de Google Maps, optimisée pour les appareils moins puissants.</p>
+          </div>
+          <div class="example-item card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+              alt="Starbucks Logo"
+            />
+            <p>
+              <strong>Starbucks</strong>: Offre la commande en ligne et la gestion des récompenses via sa PWA, avec des fonctionnalités hors ligne.
+            </p>
+          </div>
+          <div class="example-item card">
+            <img src="../assets/img/alibaba.com-logo-512x512.png" alt="Alibaba Logo" />
+            <p><strong>Alibaba</strong>: L'un des plus grands sites e-commerce, utilise une PWA pour atteindre un large public international.</p>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="development card">
+        <h2><i class="fas fa-tools icon"></i> Développer une PWA</h2>
+        <div class="dev-flex">
+          <div class="dev-column">
+            <h3><i class="fas fa-cubes"></i> Outils et Frameworks</h3>
+            <p>La plupart des frameworks JavaScript modernes facilitent la création de PWA :</p>
+            <ul>
+              <li>
+                <strong>React :</strong> via Create React App (CRA) avec son template PWA ou Vite avec des plugins comme `vite-plugin-pwa`.
+                Intégration aisée de Workbox.
+              </li>
+              <li><strong>Vue.js :</strong> Utilisation du plugin officiel `@vue/cli-plugin-pwa` ou d'intégrations pour Vite.</li>
+              <li><strong>Angular :</strong> Le module `@angular/pwa` simplifie l'ajout de Service Workers et d'un Manifest.</li>
+              <li><strong>SvelteKit :</strong> Intégration native des Service Workers pour le caching et les fonctionnalités hors ligne.</li>
+              <li>
+                <strong>Vanilla JS :</strong> Il est tout à fait possible de créer une PWA sans framework, en écrivant manuellement le Service Worker
+                et le Manifest.
+              </li>
+            </ul>
+          </div>
+          <div class="dev-column">
+            <h3><i class="fas fa-book-open"></i> Ressources d'Apprentissage</h3>
+            <p>De nombreux tutoriels et documentations sont disponibles :</p>
+            <ul>
+              <li><a href="https://web.dev/learn/pwa?hl=fr" target="_blank" rel="noopener noreferrer">Tutoriel officiel de Google (web.dev)</a></li>
+              <li>
+                <a href="https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer"
+                  >Documentation MDN sur les PWA</a
+                >
+              </li>
+              <li>Tutoriels vidéo (rechercher "PWA tutorial" sur YouTube)</li>
+            </ul>
+            <p>Exemple de ressource vidéo :</p>
+            <a href="https://www.youtube.com/watch?v=sFsRylCQblw" target="_blank" rel="noopener noreferrer" class="video-thumbnail-link">
+              <img src="https://img.youtube.com/vi/sFsRylCQblw/mqdefault.jpg" alt="Miniature vidéo tutoriel PWA" class="video-thumbnail" />
+              <span>Voir un tutoriel vidéo sur YouTube</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="future-trends card">
+        <h2><i class="fas fa-chart-line icon"></i> Avenir et Tendances des PWA</h2>
+        <p>Les PWA continuent d'évoluer avec le web :</p>
+        <ul>
+          <li>
+            <strong>Project Fugu <i class="fas fa-fish text-secondary"></i>:</strong> Initiative de Google et d'autres pour donner aux applications
+            web l'accès à davantage de capacités matérielles (NFC, Bluetooth, accès au système de fichiers, etc.), réduisant l'écart avec le natif.
+          </li>
+          <li>
+            <strong>Meilleure intégration OS :</strong> Des fonctionnalités comme les "badges" sur les icônes, les raccourcis d'application, et une
+            meilleure gestion des fenêtres sont en cours de développement.
+          </li>
+          <li>
+            <strong>WebAssembly (WASM) :</strong> Permet d'exécuter du code haute performance (C++, Rust) dans le navigateur, ouvrant la porte à des
+            PWA plus complexes (jeux, édition photo/vidéo).
+          </li>
+          <li>
+            <strong>Amélioration du support iOS :</strong> Apple améliore progressivement le support des PWA sur iOS, bien que l'écart avec Android
+            persiste sur certains points. Les notifications push web sont une avancée majeure récente.
+          </li>
+          <li>
+            <strong>PWA dans les Stores :</strong> Des technologies comme les Trusted Web Activities (TWA) sur Android et potentiellement d'autres
+            solutions permettent de publier des PWA dans les stores d'applications.
+          </li>
+        </ul>
+      </section>
+
+      <hr class="separator" />
+
+      <aside class="keep-updated card">
+        <h2><i class="fas fa-bell icon"></i> Restez Informé : Outils et Sources</h2>
+        <p>Le paysage des PWA évolue vite. Voici comment je reste à jour :</p>
+        <div class="resources-grid">
+          <div>
+            <h3><i class="fas fa-newspaper"></i> Sites Spécialisés & Blogs</h3>
+            <ul>
+              <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a> (par Google)</li>
+              <li>
+                <a href="https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+              </li>
+              <li><a href="https://pwastats.com/" target="_blank" rel="noopener noreferrer">PWA Stats</a> (Études de cas)</li>
+              <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+              <li>Blog des développeurs Chrome, Firefox, Safari</li>
+            </ul>
+          </div>
+          <div>
+            <h3><i class="fas fa-wrench"></i> Outils Essentiels</h3>
+            <ul>
+              <li>
+                <strong>Google Lighthouse :</strong> Intégré aux DevTools de Chrome pour auditer les performances, l'accessibilité, et la conformité
+                PWA.
+              </li>
+              <li>
+                <strong>PWA Builder :</strong> <a href="https://www.pwabuilder.com/" target="_blank" rel="noopener noreferrer">pwabuilder.com</a> (par
+                Microsoft) - Aide à créer/packager des PWA.
+              </li>
+              <li>
+                <strong>Can I use :</strong> <a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">caniuse.com</a> - Pour vérifier
+                la compatibilité des API web entre navigateurs.
+              </li>
+              <li><strong>Navigateur DevTools :</strong> Indispensables pour déboguer les Service Workers (onglet Application/Stockage).</li>
+            </ul>
+          </div>
+          <div>
+            <h3><i class="fas fa-share-alt"></i> Communautés & Réseaux</h3>
+            <ul>
+              <li><strong>Twitter/X :</strong> Suivre @webdev, @GoogleChromeDev, @MSEdgeDev, @maxlynch (Ionic), @Firt (Maximiliano Firtman)</li>
+              <li><strong>Reddit :</strong> r/ProgressiveWebApp (attention, peut être peu actif), r/webdev, r/javascript</li>
+              <li><strong>Newsletters :</strong> Web Weekly, Frontend Focus, JavaScript Weekly, Mobile Web Weekly</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
     </main>
     <footer>
       <div>
