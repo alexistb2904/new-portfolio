@@ -1249,7 +1249,9 @@ h2 {
 #entreprise .mission-card-container {
   margin-top: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
 }
 
 #formation .mission-card,
@@ -1268,6 +1270,7 @@ h2 {
   border-radius: 2vmax;
   padding: 1%;
   margin-bottom: 5%;
+  width: 29%;
 }
 
 #formation .mission-card a,
@@ -2010,6 +2013,14 @@ main#veilleTech .resources-grid li {
   .missions-container div:first-of-type {
     width: 100%;
   }
+
+  #formation .mission-card,
+  #PPEDESKTOP .mission-card,
+  #PPEWEB .mission-card,
+  #entreprise .mission-card,
+  .missions-container .mission-card {
+    width: 100% !important;
+  }
 }
 
 /* Large devices such as laptops (1024px and below) */
@@ -2020,6 +2031,14 @@ main#veilleTech .resources-grid li {
 
   .home-page-grid a {
     font-size: 2vw;
+  }
+
+  #formation .mission-card,
+  #PPEDESKTOP .mission-card,
+  #PPEWEB .mission-card,
+  #entreprise .mission-card,
+  .missions-container .mission-card {
+    width: 45%;
   }
 }
 
