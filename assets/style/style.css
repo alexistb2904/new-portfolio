@@ -62,7 +62,7 @@ body {
 
 section,
 main {
-  margin: 0% 5% 0 5%;
+  margin: 0% 10% 0 10%;
 }
 
 /* Setup animation */
@@ -1080,6 +1080,9 @@ h2 {
   font-size: 2rem;
 }
 
+.entreprise-page .mission-card {
+  width: 100% !important;
+}
 .entreprise-separator div:last-of-type {
   display: flex;
   justify-content: center;
@@ -1243,6 +1246,14 @@ h2 {
   gap: 3vh;
 }
 
+.e6-page .mission-card {
+  width: 100% !important;
+}
+
+.e6-page .mission-card a {
+  width: 80%;
+}
+
 #formation .mission-card-container,
 #PPEDESKTOP .mission-card-container,
 #PPEWEB .mission-card-container,
@@ -1263,12 +1274,13 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-glassmorph);
+  background: var(--color-glassmorph-shadow);
   box-shadow: 0 8px 32px 0 var(--color-glassmorph-shadow);
   backdrop-filter: blur(2vmax);
   -webkit-backdrop-filter: blur(2vmax);
   border-radius: 2vmax;
   padding: 1%;
+  gap: 0.5vh;
   margin-bottom: 5%;
   width: 29%;
 }
